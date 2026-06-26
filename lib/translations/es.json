@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Sobre mí",
+    "testimonials": "Opiniones",
+    "contact": "Contacto",
+    "quote": "Solicitar presupuesto"
+  },
+  "hero": {
+    "badge": "Jefa de Proyectos de Marketing Digital",
+    "title1": "Tu presencia en línea,",
+    "title2": "sublimada.",
+    "subtitle": "Sitios web elegantes, de alto rendimiento y diseñados para la conversión. Acompaño a emprendedores, comercios y PYMEs en la creación de su identidad digital en París y en toda Francia.",
+    "cta": "Solicitar presupuesto gratuito",
+    "cta2": "Descubrir mis servicios",
+    "highlights": ["Sitios optimizados SEO", "Diseño responsive", "Entrega llave en mano"]
+  },
+  "services": {
+    "badge": "Mis Servicios",
+    "title": "Soluciones completas para tu éxito digital",
+    "subtitle": "Del diseño a la publicación, me encargo de todo para entregarte un sitio web de alto rendimiento listo para convertir.",
+    "items": [
+      {
+        "title": "Creación de sitio web",
+        "description": "Un sitio web profesional que refleje tu identidad y realce tus servicios. Diseño a medida adaptado a tu actividad."
+      },
+      {
+        "title": "Diseño responsive",
+        "description": "Tu sitio se adapta perfectamente a todas las pantallas: móvil, tablet y ordenador para una experiencia de usuario óptima."
+      },
+      {
+        "title": "Optimización SEO",
+        "description": "Tu sitio está diseñado para ser visible en Google. Implemento las mejores prácticas para mejorar tu posicionamiento natural."
+      },
+      {
+        "title": "Identidad visual",
+        "description": "Creación de una identidad gráfica coherente: elección de colores, tipografías y elementos visuales que te representan."
+      },
+      {
+        "title": "Estrategia digital",
+        "description": "Consultoría en estrategia web y acompañamiento para maximizar tu presencia en línea y alcanzar tus objetivos comerciales."
+      },
+      {
+        "title": "Mantenimiento y soporte",
+        "description": "Acompañamiento continuo para mantener tu sitio actualizado, seguro y con buen rendimiento a lo largo del tiempo."
+      }
+    ]
+  },
+  "about": {
+    "badge": "Sobre mí",
+    "title": "Tu socio para una presencia digital exitosa",
+    "paragraph1": "Soy <strong>Rachida Bigourn</strong>, Jefa de Proyectos de Marketing Digital con sede en París. Gracias a mi formación en Digital Campus Paris (75011), acompaño a nuevas empresas, sociedades, autónomos y comerciantes en la creación de su identidad digital.",
+    "paragraph2": "Esta formación me permitió adquirir una visión 360° de la web, donde el diseño se encuentra con la estrategia. Hoy, pongo este conocimiento al servicio de tus proyectos para crear sitios web que no solo son estéticos, sino verdaderamente diseñados para impulsar tu visibilidad y credibilidad desde el lanzamiento de tu actividad.",
+    "paragraph3": "Mi experiencia me permite diseñar sitios de alto rendimiento, fáciles de usar en móvil y ordenador. De la estructura del sitio a la estrategia publicitaria, me encargo de todo para entregarte una herramienta llave en mano, capaz de convertir a tus visitantes en clientes.",
+    "location": "París, Francia",
+    "quote": "Mi objetivo: ofrecerte un sitio web que trabaje para ti, 24/7.",
+    "stats": [
+      { "value": "50+", "label": "Clientes atendidos" },
+      { "value": "100%", "label": "Satisfacción del cliente" },
+      { "value": "360°", "label": "Visión web completa" }
+    ]
+  },
+  "portfolio": {
+    "badge": "Portafolio",
+    "title": "Mis proyectos",
+    "subtitle": "Descubre un adelanto de los sitios que he diseñado para mis clientes. Cada proyecto está pensado para reflejar la identidad única de cada negocio.",
+    "viewSite": "Ver sitio",
+    "projects": [
+      {
+        "title": "Maison d'Artisanat Marocain",
+        "description": "Un escaparate elegante que realza la autenticidad y la artesanía marroquí. Un diseño cálido con tonos terracota que refleja la riqueza cultural y atrae a una clientela apasionada por las creaciones artesanales únicas.",
+        "url": "https://www.maison-dartisanat-marocain.fr/"
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Testimonios",
+    "title": "Próximamente opiniones",
+    "subtitle": "Las primeras opiniones de mis clientes estarán disponibles aquí pronto.",
+    "cardTitle": "Espacio de testimonios",
+    "cardText": "¿Eres uno de mis clientes? Tu opinión es muy importante para mí y para mis futuros clientes. No dudes en compartir tu experiencia.",
+    "leaveReview": "Dejar un testimonio"
+  },
+  "cta": {
+    "title": "¿Listo para crear tu sitio web?",
+    "subtitle": "Transforma tu idea en un sitio profesional que atraiga clientes. Inicia tu proyecto hoy.",
+    "button": "Iniciar mi proyecto"
+  },
+  "contact": {
+    "badge": "Contacto",
+    "title": "Solicitud de contacto y presupuesto",
+    "subtitle": "¿Listo para lanzar tu sitio web? Rellena el formulario para obtener un presupuesto personalizado gratuito.",
+    "email": "Email",
+    "location": "Ubicación",
+    "locationValue": "París, Francia",
+    "available": "Disponible por videollamada en toda Francia",
+    "guarantees": "Lo que garantizo",
+    "guaranteeItems": [
+      "Diseño moderno y profesional",
+      "Sitio rápido y responsive",
+      "Comunicación clara y seguimiento del proyecto",
+      "Soporte post-entrega"
+    ],
+    "directEmail": "Contacto directo por email",
+    "form": {
+      "nameLabel": "Nombre completo *",
+      "namePlaceholder": "Tu nombre completo",
+      "companyLabel": "Empresa / actividad",
+      "companyPlaceholder": "Tu empresa (opcional)",
+      "emailLabel": "Correo electrónico *",
+      "emailPlaceholder": "tu@email.com",
+      "phoneLabel": "Teléfono",
+      "phonePlaceholder": "+34 600 00 00 00 (opcional)",
+      "cityLabel": "Ciudad / País",
+      "cityPlaceholder": "París, Francia (opcional)",
+      "submit": "Enviar solicitud",
+      "sending": "Enviando...",
+      "success": "Solicitud enviada",
+      "successText": "Gracias por tu solicitud. Te responderé lo antes posible.",
+      "consent": "Al enviar este formulario, aceptas ser contactado sobre tu proyecto. Tus datos permanecen estrictamente confidenciales."
+    }
+  },
+  "footer": {
+    "brand": "BIGOURN Rachida",
+    "description": "Jefa de Proyectos de Marketing Digital en París. Creación de sitios web profesionales para emprendedores y PYMEs.",
+    "navTitle": "Navegación",
+    "contactTitle": "Contacto",
+    "location": "París, Francia",
+    "copyright": "Todos los derechos reservados.",
+    "legal": "Aviso legal",
+    "privacy": "Política de privacidad"
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "ar": "العربية"
+  },
+  "metadata": {
+    "title": "Rachida Bigourn | Creación de Sitios Web en París",
+    "description": "Jefa de Proyectos de Marketing Digital en París. Creo sitios web profesionales y optimizados para SEO para emprendedores, comercios y PYMEs. Aumenta tu visibilidad en línea.",
+    "keywords": ["creación de sitios web", "diseño web París", "marketing digital", "SEO", "página web profesional"]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "testimonials": "Avis",
+    "contact": "Contact",
+    "quote": "Demander un devis"
+  },
+  "hero": {
+    "badge": "Chef de projet Marketing Digital",
+    "title1": "Votre présence en ligne,",
+    "title2": "sublimée.",
+    "subtitle": "Des sites vitrines élégants, performants et conçus pour la conversion. J'accompagne les entrepreneurs, commerçants et PME dans la création de leur identité numérique à Paris et partout en France.",
+    "cta": "Demander un devis gratuit",
+    "cta2": "Découvrir mes services",
+    "highlights": ["Sites optimisés SEO", "Design responsive", "Livraison clé en main"]
+  },
+  "services": {
+    "badge": "Mes services",
+    "title": "Des solutions complètes pour votre succès digital",
+    "subtitle": "De la conception à la mise en ligne, je m'occupe de tout pour vous livrer un site web performant et prêt à convertir.",
+    "items": [
+      {
+        "title": "Création de site vitrine",
+        "description": "Un site web professionnel qui reflète votre identité et met en valeur vos services. Design sur mesure adapté à votre activité."
+      },
+      {
+        "title": "Design responsive",
+        "description": "Votre site s'adapte parfaitement à tous les écrans : mobile, tablette et ordinateur pour une expérience utilisateur optimale."
+      },
+      {
+        "title": "Optimisation SEO",
+        "description": "Votre site est conçu pour être visible sur Google. Je mets en place les bonnes pratiques pour améliorer votre référencement naturel."
+      },
+      {
+        "title": "Identité visuelle",
+        "description": "Création d'une identité graphique cohérente : choix des couleurs, typographies et éléments visuels qui vous représentent."
+      },
+      {
+        "title": "Stratégie digitale",
+        "description": "Conseil en stratégie web et accompagnement pour maximiser votre présence en ligne et atteindre vos objectifs commerciaux."
+      },
+      {
+        "title": "Maintenance & support",
+        "description": "Un accompagnement continu pour maintenir votre site à jour, sécurisé et performant au fil du temps."
+      }
+    ]
+  },
+  "about": {
+    "badge": "À propos",
+    "title": "Votre partenaire pour une présence digitale réussie",
+    "paragraph1": "Je suis <strong>Rachida Bigourn</strong>, Chef de projet Marketing Digital basée à Paris. Grâce à mon parcours au Digital Campus Paris (75011), j'accompagne les nouvelles entreprises, sociétés, auto-entrepreneurs et commerçants dans la création de leur identité numérique.",
+    "paragraph2": "Ce cursus m'a permis d'acquérir une vision à 360° du web, où le design rencontre la stratégie. Aujourd'hui, je mets ce savoir-faire au service de vos projets pour créer des sites vitrines qui ne sont pas seulement esthétiques, mais véritablement pensés pour booster votre visibilité et votre crédibilité dès le lancement de votre activité.",
+    "paragraph3": "Mon expertise me permet de concevoir des sites performants, faciles à utiliser sur mobile comme sur ordinateur. De la structure du site à la stratégie publicitaire, je m'occupe de tout pour vous livrer un outil clé en main, capable de transformer vos visiteurs en clients.",
+    "location": "Paris, France",
+    "quote": "Mon objectif : vous offrir un site web qui travaille pour vous, 24h/24, 7j/7.",
+    "stats": [
+      { "value": "50+", "label": "Clients accompagnés" },
+      { "value": "100%", "label": "Satisfaction client" },
+      { "value": "360°", "label": "Vision web complète" }
+    ]
+  },
+  "portfolio": {
+    "badge": "Portfolio",
+    "title": "Mes réalisations",
+    "subtitle": "Découvrez un aperçu des sites que j'ai conçus pour mes clients. Chaque projet est pensé pour refléter l'identité unique de chaque entreprise.",
+    "viewSite": "Voir le site",
+    "projects": [
+      {
+        "title": "Maison d'Artisanat Marocain",
+        "description": "Une vitrine élégante pour mettre en valeur l'authenticité et le savoir-faire de l'artisanat marocain. Un design chaleureux aux teintes terracotta qui reflète la richesse culturelle et attire une clientèle passionnée par les créations artisanales uniques.",
+        "url": "https://www.maison-dartisanat-marocain.fr/"
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Témoignages",
+    "title": "Avis à venir",
+    "subtitle": "Les premiers avis de mes clients seront bientôt disponibles ici.",
+    "cardTitle": "Espace réservé aux témoignages",
+    "cardText": "Vous êtes un de mes clients ? Votre avis compte beaucoup pour moi et pour mes futurs clients. N'hésitez pas à partager votre expérience.",
+    "leaveReview": "Laisser un témoignage"
+  },
+  "cta": {
+    "title": "Prêt à créer votre site web ?",
+    "subtitle": "Transformez votre idée en un site professionnel qui attire des clients. Lancez votre projet dès aujourd'hui.",
+    "button": "Lancer mon projet"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Demande de contact et de devis",
+    "subtitle": "Prêt à lancer votre site web ? Remplissez le formulaire ci-dessous pour obtenir un devis personnalisé gratuit.",
+    "email": "Email",
+    "location": "Localisation",
+    "locationValue": "Paris, France",
+    "available": "Disponible en visio partout en France",
+    "guarantees": "Ce que je garantis",
+    "guaranteeItems": [
+      "Design moderne et professionnel",
+      "Site rapide et responsive",
+      "Communication claire et suivi du projet",
+      "Support après livraison"
+    ],
+    "directEmail": "Contact direct par email",
+    "form": {
+      "nameLabel": "Nom / Prénom *",
+      "namePlaceholder": "Votre nom complet",
+      "companyLabel": "Nom de l'entreprise / activité",
+      "companyPlaceholder": "Votre entreprise (optionnel)",
+      "emailLabel": "Adresse email *",
+      "emailPlaceholder": "votre@email.com",
+      "phoneLabel": "Numéro de téléphone",
+      "phonePlaceholder": "06 00 00 00 00 (optionnel)",
+      "cityLabel": "Ville / Pays",
+      "cityPlaceholder": "Paris, France (optionnel)",
+      "submit": "Envoyer la demande",
+      "sending": "Envoi en cours...",
+      "success": "Demande envoyée !",
+      "successText": "Merci pour votre demande. Je vous répondrai dans les plus brefs délais.",
+      "consent": "En soumettant ce formulaire, vous acceptez d'être contacté concernant votre projet. Vos données restent strictement confidentielles."
+    }
+  },
+  "footer": {
+    "brand": "BIGOURN Rachida",
+    "description": "Chef de projet Marketing Digital à Paris. Création de sites vitrines professionnels pour entrepreneurs et PME.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "location": "Paris, France",
+    "copyright": "Tous droits réservés.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité"
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "ar": "العربية"
+  },
+  "metadata": {
+    "title": "Rachida Bigourn | Création de Sites Vitrines à Paris",
+    "description": "Chef de projet Marketing Digital à Paris. Je crée des sites vitrines professionnels et optimisés SEO pour entrepreneurs, commerçants et PME. Boostez votre visibilité en ligne.",
+    "keywords": ["création site vitrine", "site web Paris", "marketing digital", "web design", "SEO"]
+  }
+}

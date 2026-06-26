@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "testimonials": "Reviews",
+    "contact": "Contact",
+    "quote": "Get a quote"
+  },
+  "hero": {
+    "badge": "Digital Marketing Project Manager",
+    "title1": "Your online presence,",
+    "title2": "elevated.",
+    "subtitle": "Elegant, high-performance showpiece websites designed for conversion. I support entrepreneurs, businesses and SMEs in creating their digital identity in Paris and across France.",
+    "cta": "Get a free quote",
+    "cta2": "Discover my services",
+    "highlights": ["SEO-optimized sites", "Responsive design", "Turnkey delivery"]
+  },
+  "services": {
+    "badge": "My Services",
+    "title": "Complete solutions for your digital success",
+    "subtitle": "From design to launch, I handle everything to deliver a high-performance website ready to convert.",
+    "items": [
+      {
+        "title": "Website Creation",
+        "description": "A professional website that reflects your identity and showcases your services. Custom design tailored to your business."
+      },
+      {
+        "title": "Responsive Design",
+        "description": "Your site adapts perfectly to all screens: mobile, tablet and computer for an optimal user experience."
+      },
+      {
+        "title": "SEO Optimization",
+        "description": "Your site is designed to be visible on Google. I implement best practices to improve your natural search rankings."
+      },
+      {
+        "title": "Visual Identity",
+        "description": "Creation of a cohesive visual identity: color choices, typography and visual elements that represent you."
+      },
+      {
+        "title": "Digital Strategy",
+        "description": "Web strategy consulting and support to maximize your online presence and achieve your business goals."
+      },
+      {
+        "title": "Maintenance & Support",
+        "description": "Ongoing support to keep your website up to date, secure and performing well over time."
+      }
+    ]
+  },
+  "about": {
+    "badge": "About",
+    "title": "Your partner for a successful digital presence",
+    "paragraph1": "I am <strong>Rachida Bigourn</strong>, Digital Marketing Project Manager based in Paris. Through my training at Digital Campus Paris (75011), I support new businesses, companies, freelancers and merchants in creating their digital identity.",
+    "paragraph2": "This education gave me a 360° vision of the web, where design meets strategy. Today, I put this expertise at the service of your projects to create showpiece websites that are not just aesthetic, but truly designed to boost your visibility and credibility from the launch of your activity.",
+    "paragraph3": "My expertise allows me to design high-performance sites that are easy to use on mobile and desktop. From site structure to advertising strategy, I handle everything to deliver a turnkey tool capable of turning your visitors into customers.",
+    "location": "Paris, France",
+    "quote": "My goal: to offer you a website that works for you, 24/7.",
+    "stats": [
+      { "value": "50+", "label": "Clients supported" },
+      { "value": "100%", "label": "Client satisfaction" },
+      { "value": "360°", "label": "Complete web vision" }
+    ]
+  },
+  "portfolio": {
+    "badge": "Portfolio",
+    "title": "My Projects",
+    "subtitle": "Discover a preview of the sites I have designed for my clients. Each project is designed to reflect the unique identity of each business.",
+    "viewSite": "View site",
+    "projects": [
+      {
+        "title": "Maison d'Artisanat Marocain",
+        "description": "An elegant showcase highlighting the authenticity and craftsmanship of Moroccan artisanship. A warm design with terracotta tones that reflects cultural richness and attracts clientele passionate about unique handmade creations.",
+        "url": "https://www.maison-dartisanat-marocain.fr/"
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "Reviews coming soon",
+    "subtitle": "The first reviews from my clients will be available here soon.",
+    "cardTitle": "Testimonials space",
+    "cardText": "Are you one of my clients? Your opinion matters greatly to me and to my future clients. Feel free to share your experience.",
+    "leaveReview": "Leave a review"
+  },
+  "cta": {
+    "title": "Ready to create your website?",
+    "subtitle": "Turn your idea into a professional website that attracts clients. Start your project today.",
+    "button": "Start my project"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Contact and quote request",
+    "subtitle": "Ready to launch your website? Fill out the form below to get a free personalized quote.",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Paris, France",
+    "available": "Available by video call anywhere in France",
+    "guarantees": "What I guarantee",
+    "guaranteeItems": [
+      "Modern and professional design",
+      "Fast and responsive site",
+      "Clear communication and project follow-up",
+      "Post-delivery support"
+    ],
+    "directEmail": "Contact by email",
+    "form": {
+      "nameLabel": "Full Name *",
+      "namePlaceholder": "Your full name",
+      "companyLabel": "Company name / activity",
+      "companyPlaceholder": "Your company (optional)",
+      "emailLabel": "Email address *",
+      "emailPlaceholder": "your@email.com",
+      "phoneLabel": "Phone number",
+      "phonePlaceholder": "+33 6 00 00 00 00 (optional)",
+      "cityLabel": "City / Country",
+      "cityPlaceholder": "Paris, France (optional)",
+      "submit": "Send request",
+      "sending": "Sending...",
+      "success": "Request sent!",
+      "successText": "Thank you for your request. I will get back to you as soon as possible.",
+      "consent": "By submitting this form, you agree to be contacted regarding your project. Your data remains strictly confidential."
+    }
+  },
+  "footer": {
+    "brand": "BIGOURN Rachida",
+    "description": "Digital Marketing Project Manager in Paris. Creation of professional showpiece websites for entrepreneurs and SMEs.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "location": "Paris, France",
+    "copyright": "All rights reserved.",
+    "legal": "Legal notices",
+    "privacy": "Privacy policy"
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "ar": "العربية"
+  },
+  "metadata": {
+    "title": "Rachida Bigourn | Professional Website Creation in Paris",
+    "description": "Digital Marketing Project Manager in Paris. I create professional, SEO-optimized showpiece websites for entrepreneurs, businesses and SMEs. Boost your online visibility.",
+    "keywords": ["website creation", "web design Paris", "digital marketing", "SEO", "showpiece website"]
+  }
+}

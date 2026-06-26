@@ -1,22 +1,25 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
-
-const navLinks = [
-  { href: "#accueil", label: "Accueil" },
-  { href: "#services", label: "Services" },
-  { href: "#apropos", label: "À propos" },
-  { href: "#avis", label: "Avis" },
-  { href: "#contact", label: "Contact" },
-]
+import { useTranslation } from "@/lib/use-translation"
 
 export function Footer() {
+  const { t } = useTranslation()
   const currentYear = new Date().getFullYear()
+
+  const navLinks = [
+    { href: "#accueil", label: t("nav.home") },
+    { href: "#services", label: t("nav.services") },
+    { href: "#apropos", label: t("nav.about") },
+    { href: "#avis", label: t("nav.testimonials") },
+    { href: "#contact", label: t("nav.contact") },
+  ]
 
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-3 mb-4">
               <Image
@@ -27,18 +30,16 @@ export function Footer() {
                 className="rounded-sm"
               />
               <span className="font-serif text-xl font-semibold">
-                BIGOURN Rachida
+                {t("footer.brand")}
               </span>
             </Link>
             <p className="text-background/70 leading-relaxed">
-              Chef de projet Marketing Digital à Paris. 
-              Création de sites vitrines professionnels pour entrepreneurs et PME.
+              {t("footer.description")}
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
-            <h3 className="font-semibold mb-4 text-[#C9A227]">Navigation</h3>
+            <h3 className="font-semibold mb-4 text-[#C9A227]">{t("footer.navTitle")}</h3>
             <nav className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <Link
@@ -52,11 +53,10 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Contact */}
           <div>
-            <h3 className="font-semibold mb-4 text-[#C9A227]">Contact</h3>
+            <h3 className="font-semibold mb-4 text-[#C9A227]">{t("footer.contactTitle")}</h3>
             <div className="space-y-2 text-background/70">
-              <p>Paris, France</p>
+              <p>{t("footer.location")}</p>
               <a 
                 href="mailto:Bigourn.rachida@gmail.com" 
                 className="hover:text-[#C9A227] transition-colors block"
@@ -69,14 +69,14 @@ export function Footer() {
 
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/60 text-sm">
-            © {currentYear} BIGOURN Rachida. Tous droits réservés.
+            © {currentYear} BIGOURN Rachida. {t("footer.copyright")}
           </p>
           <div className="flex gap-6 text-sm text-background/60">
             <Link href="#" className="hover:text-[#C9A227] transition-colors">
-              Mentions légales
+              {t("footer.legal")}
             </Link>
             <Link href="#" className="hover:text-[#C9A227] transition-colors">
-              Politique de confidentialité
+              {t("footer.privacy")}
             </Link>
           </div>
         </div>

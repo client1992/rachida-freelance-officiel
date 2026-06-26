@@ -6,10 +6,14 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { FieldGroup, Field, FieldLabel } from "@/components/ui/field"
+import { useTranslation } from "@/lib/use-translation"
 
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const { t, tArray } = useTranslation()
+
+  const guaranteeItems = tArray("contact.guaranteeItems") as string[]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -45,19 +49,17 @@ export function Contact() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <p className="text-[#C9A227] font-medium mb-3 tracking-wide uppercase text-sm">
-            Contact
+            {t("contact.badge")}
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-4 text-balance">
-            Demande de contact et de devis
+            {t("contact.title")}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Prêt à lancer votre site web ? Remplissez le formulaire ci-dessous 
-            pour obtenir un devis personnalisé gratuit.
+            {t("contact.subtitle")}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
-          {/* Contact Info */}
           <div className="space-y-6">
             <Card className="bg-card border-border">
               <CardContent className="pt-6">
@@ -66,7 +68,7 @@ export function Contact() {
                     <Mail className="h-6 w-6 text-[#C9A227]" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                    <h3 className="font-semibold text-foreground mb-1">{t("contact.email")}</h3>
                     <a 
                       href="mailto:Bigourn.rachida@gmail.com" 
                       className="text-muted-foreground hover:text-[#C9A227] transition-colors"
@@ -85,10 +87,10 @@ export function Contact() {
                     <MapPin className="h-6 w-6 text-[#C9A227]" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Localisation</h3>
-                    <p className="text-muted-foreground">Paris, France</p>
+                    <h3 className="font-semibold text-foreground mb-1">{t("contact.location")}</h3>
+                    <p className="text-muted-foreground">{t("contact.locationValue")}</p>
                     <p className="text-sm text-muted-foreground mt-1">
-                      Disponible en visio partout en France
+                      {t("contact.available")}
                     </p>
                   </div>
                 </div>
@@ -96,38 +98,26 @@ export function Contact() {
             </Card>
 
             <div className="bg-primary text-primary-foreground rounded-xl p-6 border-l-4 border-[#C9A227]">
-              <h3 className="font-semibold text-lg mb-3">Ce que je garantis</h3>
+              <h3 className="font-semibold text-lg mb-3">{t("contact.guarantees")}</h3>
               <ul className="space-y-2 text-primary-foreground/90 text-sm">
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-[#C9A227] rounded-full" />
-                  Design moderne et professionnel
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-[#C9A227] rounded-full" />
-                  Site rapide et responsive
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-[#C9A227] rounded-full" />
-                  Communication claire et suivi du projet
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-[#C9A227] rounded-full" />
-                  Support après livraison
-                </li>
+                {guaranteeItems.map((item, i) => (
+                  <li key={i} className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-[#C9A227] rounded-full" />
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
 
-            {/* Direct Email Link */}
             <a
               href="mailto:Bigourn.rachida@gmail.com"
               className="flex items-center justify-center gap-2 w-full py-3 px-4 border-2 border-[#C9A227] text-[#C9A227] rounded-lg font-medium hover:bg-[#C9A227] hover:text-white transition-colors"
             >
               <Mail className="h-5 w-5" />
-              Contact direct par email
+              {t("contact.directEmail")}
             </a>
           </div>
 
-          {/* Contact Form */}
           <div className="lg:col-span-2">
             <Card className="bg-card border-border">
               <CardContent className="pt-6">
@@ -137,10 +127,10 @@ export function Contact() {
                       <Send className="h-8 w-8 text-[#C9A227]" />
                     </div>
                     <h3 className="font-serif text-2xl font-semibold text-foreground mb-2">
-                      Demande envoyée !
+                      {t("contact.form.success")}
                     </h3>
                     <p className="text-muted-foreground">
-                      Merci pour votre demande. Je vous répondrai dans les plus brefs délais.
+                      {t("contact.form.successText")}
                     </p>
                   </div>
                 ) : (
@@ -148,33 +138,33 @@ export function Contact() {
                     <FieldGroup>
                       <div className="grid md:grid-cols-2 gap-4">
                         <Field>
-                          <FieldLabel htmlFor="name">Nom / Prénom *</FieldLabel>
+                          <FieldLabel htmlFor="name">{t("contact.form.nameLabel")}</FieldLabel>
                           <Input
                             id="name"
                             name="name"
-                            placeholder="Votre nom complet"
+                            placeholder={t("contact.form.namePlaceholder")}
                             required
                             className="border-border focus:border-[#C9A227] focus:ring-[#C9A227]"
                           />
                         </Field>
                         <Field>
-                          <FieldLabel htmlFor="company">Nom de l&apos;entreprise / activité</FieldLabel>
+                          <FieldLabel htmlFor="company">{t("contact.form.companyLabel")}</FieldLabel>
                           <Input
                             id="company"
                             name="company"
-                            placeholder="Votre entreprise (optionnel)"
+                            placeholder={t("contact.form.companyPlaceholder")}
                             className="border-border focus:border-[#C9A227] focus:ring-[#C9A227]"
                           />
                         </Field>
                       </div>
 
                       <Field>
-                        <FieldLabel htmlFor="email">Adresse email *</FieldLabel>
+                        <FieldLabel htmlFor="email">{t("contact.form.emailLabel")}</FieldLabel>
                         <Input
                           id="email"
                           name="email"
                           type="email"
-                          placeholder="votre@email.com"
+                          placeholder={t("contact.form.emailPlaceholder")}
                           required
                           className="border-border focus:border-[#C9A227] focus:ring-[#C9A227]"
                         />
@@ -182,21 +172,21 @@ export function Contact() {
 
                       <div className="grid md:grid-cols-2 gap-4">
                         <Field>
-                          <FieldLabel htmlFor="phone">Numéro de téléphone</FieldLabel>
+                          <FieldLabel htmlFor="phone">{t("contact.form.phoneLabel")}</FieldLabel>
                           <Input
                             id="phone"
                             name="phone"
                             type="tel"
-                            placeholder="06 00 00 00 00 (optionnel)"
+                            placeholder={t("contact.form.phonePlaceholder")}
                             className="border-border focus:border-[#C9A227] focus:ring-[#C9A227]"
                           />
                         </Field>
                         <Field>
-                          <FieldLabel htmlFor="city">Ville / Pays</FieldLabel>
+                          <FieldLabel htmlFor="city">{t("contact.form.cityLabel")}</FieldLabel>
                           <Input
                             id="city"
                             name="city"
-                            placeholder="Paris, France (optionnel)"
+                            placeholder={t("contact.form.cityPlaceholder")}
                             className="border-border focus:border-[#C9A227] focus:ring-[#C9A227]"
                           />
                         </Field>
@@ -208,13 +198,12 @@ export function Contact() {
                         className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" 
                         disabled={isSubmitting}
                       >
-                        {isSubmitting ? "Envoi en cours..." : "Envoyer la demande"}
+                        {isSubmitting ? t("contact.form.sending") : t("contact.form.submit")}
                         <Send className="ml-2 h-5 w-5" />
                       </Button>
 
                       <p className="text-xs text-muted-foreground text-center mt-4">
-                        En soumettant ce formulaire, vous acceptez d&apos;être contacté 
-                        concernant votre projet. Vos données restent strictement confidentielles.
+                        {t("contact.form.consent")}
                       </p>
                     </FieldGroup>
                   </form>
