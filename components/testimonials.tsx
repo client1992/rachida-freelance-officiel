@@ -1,0 +1,44 @@
+import { MessageSquare } from "lucide-react"
+
+export function Testimonials() {
+  return (
+    <section id="avis" className="py-16 md:py-24 bg-secondary">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 md:mb-16">
+          <p className="text-[#C9A227] font-medium mb-3 tracking-wide uppercase text-sm">
+            Témoignages
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-4 text-balance">
+            Avis à venir
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            Les premiers avis de mes clients seront bientôt disponibles ici.
+          </p>
+        </div>
+
+        <div className="max-w-lg mx-auto">
+          <div className="bg-card border border-border rounded-2xl p-8 md:p-12 text-center">
+            <div className="w-20 h-20 rounded-full bg-[#C9A227]/10 flex items-center justify-center mx-auto mb-6">
+              <MessageSquare className="h-10 w-10 text-[#C9A227]" />
+            </div>
+            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+              Espace réservé aux témoignages
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Vous êtes un de mes clients ? Votre avis compte beaucoup pour moi et pour mes futurs clients. 
+              N&apos;hésitez pas à partager votre expérience.
+            </p>
+            <div className="mt-6 pt-6 border-t border-border">
+              <a 
+                href="#laisser-avis" 
+                className="text-primary font-medium hover:text-[#C9A227] transition-colors"
+              >
+                Laisser un témoignage
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
