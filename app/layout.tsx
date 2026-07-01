@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
 import { LanguageProvider } from '@/lib/language-context'
 import './globals.css'
 
@@ -48,6 +49,14 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
           {process.env.NODE_ENV === 'production' && <Analytics />}
+          {process.env.NODE_ENV === 'production' && (
+            <>
+              <Script src="https://www.googletagmanager.com/gtag/js?id=G-X8C7MGSQFW" strategy="afterInteractive" />
+              <Script id="google-analytics" strategy="afterInteractive">
+                {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-X8C7MGSQFW');`}
+              </Script>
+            </>
+          )}
         </LanguageProvider>
       </body>
     </html>
