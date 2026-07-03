@@ -16,25 +16,18 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Rachida Bigourn | Création de Sites Vitrines à Paris',
-  description: 'Chef de projet Marketing Digital à Paris. Je crée des sites vitrines professionnels et optimisés SEO pour entrepreneurs, commerçants et PME. Boostez votre visibilité en ligne.',
-  keywords: ['création site vitrine', 'site web Paris', 'marketing digital', 'web design', 'SEO', 'entrepreneur', 'commerçant', 'auto-entrepreneur'],
-  authors: [{ name: 'Rachida Bigourn' }],
-  creator: 'Rachida Bigourn',
+  title: "Chef de projet Marketing Digital à Paris | Rachida Bigourn",
+  description: "Création de sites vitrines professionnels, élégants et performants pour PME, artisans et entrepreneurs à Paris et à l'international. Devis gratuit !",
+  keywords: ["Chef de projet marketing digital", "création site vitrine Paris", "référencement naturel", "SEO international", "Rachida Bigourn", "site internet professionnel"],
+  authors: [{ name: "Rachida Bigourn", url: "https://rachidabigourn.fr" }],
+  creator: "Rachida Bigourn",
   openGraph: {
-    title: 'Rachida Bigourn | Création de Sites Vitrines à Paris',
-    description: 'Chef de projet Marketing Digital à Paris. Je crée des sites vitrines professionnels et optimisés SEO pour entrepreneurs, commerçants et PME.',
-    type: 'website',
-    locale: 'fr_FR',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Rachida Bigourn | Création de Sites Vitrines à Paris',
-    description: 'Chef de projet Marketing Digital à Paris. Je crée des sites vitrines professionnels et optimisés SEO.',
-  },
-  robots: {
-    index: true,
-    follow: true,
+    title: "Chef de projet Marketing Digital à Paris | Rachida Bigourn",
+    description: "Création de sites vitrines professionnels et performants. Conçus pour la conversion et optimisés pour le SEO, disponibles partout dans le monde.",
+    url: "https://rachidabigourn.fr",
+    siteName: "Rachida Bigourn - Marketing Digital",
+    locale: "fr_FR",
+    type: "website",
   },
 }
 
