@@ -1,16 +1,16 @@
 "use client"
 
 import { Header } from "@/components/header"
-import { About } from "@/components/about"
+import { Testimonials } from "@/components/testimonials"
 import { CtaFinal } from "@/components/cta-final"
 import { Footer } from "@/components/footer"
 
-export default function AboutPage() {
+export default function AvisPage() {
   return (
     <>
       <Header />
       <main className="pt-20">
-        <About />
+        <Testimonials />
         <CtaFinal />
       </main>
       <Footer />
