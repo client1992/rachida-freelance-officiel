@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Rachida Bigourn", url: "https://rachidabigourn.fr" }],
   creator: "Rachida Bigourn",
   icons: {
-    icon: "/icon.png",
+    icon: "/favicon.png",
   },
   openGraph: {
     title: "Chef de projet Marketing Digital à Paris | Rachida Bigourn",
