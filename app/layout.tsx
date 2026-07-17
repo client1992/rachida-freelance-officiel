@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   keywords: ["Chef de projet marketing digital", "création site vitrine Paris", "référencement naturel", "SEO international", "Rachida Bigourn", "site internet professionnel"],
   authors: [{ name: "Rachida Bigourn", url: "https://rachidabigourn.fr" }],
   creator: "Rachida Bigourn",
+  icons: {
+    icon: "/icon.png",
+  },
   openGraph: {
     title: "Chef de projet Marketing Digital à Paris | Rachida Bigourn",
     description: "Création de sites vitrines professionnels et performants. Conçus pour la conversion et optimisés pour le SEO, disponibles partout dans le monde.",
