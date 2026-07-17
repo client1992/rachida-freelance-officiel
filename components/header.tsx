@@ -13,11 +13,11 @@ export function Header() {
   const { t } = useTranslation()
 
   const navLinks = [
-    { href: "#accueil", label: t("nav.home") },
-    { href: "#services", label: t("nav.services") },
-    { href: "#apropos", label: t("nav.about") },
-    { href: "#avis", label: t("nav.testimonials") },
-    { href: "#contact", label: t("nav.contact") },
+    { href: "/", label: t("nav.home") },
+    { href: "/services", label: t("nav.services") },
+    { href: "/a-propos", label: t("nav.about") },
+    { href: "/temoignages", label: t("nav.testimonials") },
+    { href: "/contact", label: t("nav.contact") },
   ]
 
   return (
@@ -50,7 +50,7 @@ export function Header() {
                 </Link>
               ))}
               <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground ml-2">
-                <Link href="#contact">{t("nav.quote")}</Link>
+                <Link href="/contact">{t("nav.quote")}</Link>
               </Button>
             </nav>
           </div>
@@ -81,7 +81,7 @@ export function Header() {
                 <LanguageSwitcher />
               </div>
               <Button asChild className="mt-2 bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                   {t("nav.quote")}
                 </Link>
               </Button>

@@ -9,11 +9,11 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const navLinks = [
-    { href: "#accueil", label: t("nav.home") },
-    { href: "#services", label: t("nav.services") },
-    { href: "#apropos", label: t("nav.about") },
-    { href: "#avis", label: t("nav.testimonials") },
-    { href: "#contact", label: t("nav.contact") },
+    { href: "/", label: t("nav.home") },
+    { href: "/services", label: t("nav.services") },
+    { href: "/a-propos", label: t("nav.about") },
+    { href: "/temoignages", label: t("nav.testimonials") },
+    { href: "/contact", label: t("nav.contact") },
   ]
 
   return (

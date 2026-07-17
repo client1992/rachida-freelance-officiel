@@ -33,13 +33,13 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
             <Button size="lg" asChild className="text-base bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link href="#contact">
+              <Link href="/contact">
                 {t("hero.cta")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="text-base border-[#C9A227]/50 text-foreground hover:bg-[#C9A227]/10 hover:border-[#C9A227]">
-              <Link href="#services">{t("hero.cta2")}</Link>
+              <Link href="/services">{t("hero.cta2")}</Link>
             </Button>
           </div>
 
