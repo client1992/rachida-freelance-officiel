@@ -5,16 +5,16 @@ import { usePathname } from "next/navigation"
 import Image from "next/image"
 import { useTranslation } from "@/lib/use-translation"
 
-const locales = ["fr", "en", "es", "ar"]
+const nonFrLocales = ["en", "es", "ar"]
 
 function getLocale(pathname: string): string {
   const segments = pathname.split("/")
-  return locales.includes(segments[1]) ? segments[1] : "fr"
+  return nonFrLocales.includes(segments[1]) ? segments[1] : "fr"
 }
 
 function localePath(pathname: string, href: string): string {
   const locale = getLocale(pathname)
-  if (href === "/") return `/${locale}`
+  if (locale === "fr") return href
   return `/${locale}${href}`
 }
 

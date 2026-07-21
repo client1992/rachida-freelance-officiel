@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
 })
 
-const locales = ["fr", "en", "es", "ar"]
+const locales = ["en", "es", "ar"]
 
 const metadataBase = "https://rachidabigourn.fr"
 
@@ -24,12 +24,6 @@ const seoData: Record<
   string,
   { title: string; description: string; ogLocale: string }
 > = {
-  fr: {
-    title: "Chef de projet Marketing Digital à Paris | Rachida Bigourn",
-    description:
-      "Création de sites vitrines professionnels, élégants et performants pour PME, artisans et entrepreneurs à Paris et à l'international. Devis gratuit !",
-    ogLocale: "fr_FR",
-  },
   en: {
     title: "Digital Marketing Project Manager in Paris | Rachida Bigourn",
     description:
@@ -60,13 +54,7 @@ export function generateMetadata({
   params: Promise<{ locale: string }>
 }): Metadata {
   return params.then(({ locale }) => {
-    const data = seoData[locale] || seoData.fr
-    const alternateLanguages: Record<string, string> = {}
-
-    for (const loc of locales) {
-      alternateLanguages[loc] = `${metadataBase}/${loc}`
-    }
-    alternateLanguages["x-default"] = `${metadataBase}/fr`
+    const data = seoData[locale] || seoData.en
 
     return {
       title: data.title,
@@ -85,14 +73,20 @@ export function generateMetadata({
       openGraph: {
         title: data.title,
         description: data.description,
-        url: metadataBase,
+        url: `${metadataBase}/${locale}`,
         siteName: "Rachida Bigourn - Marketing Digital",
         locale: data.ogLocale,
         type: "website",
       },
       alternates: {
         canonical: `${metadataBase}/${locale}`,
-        languages: alternateLanguages,
+        languages: {
+          fr: metadataBase,
+          en: `${metadataBase}/en`,
+          es: `${metadataBase}/es`,
+          ar: `${metadataBase}/ar`,
+          "x-default": metadataBase,
+        },
       },
     }
   })
@@ -114,7 +108,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className={`${inter.variable} ${playfair.variable} bg-background scroll-smooth`}>
       <body className="font-sans antialiased">
-        <LanguageProvider initialLocale={locale as "fr" | "en" | "es" | "ar"}>
+        <LanguageProvider initialLocale={locale as "en" | "es" | "ar"}>
           {children}
           {process.env.NODE_ENV === "production" && <Analytics />}
           {process.env.NODE_ENV === "production" && (

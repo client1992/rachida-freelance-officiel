@@ -12,23 +12,25 @@ const languages: { code: Locale; label: string; name: string; hreflang: string }
   { code: "ar", label: "AR", name: "العربية", hreflang: "ar" },
 ]
 
-const locales = ["fr", "en", "es", "ar"]
+const nonFrLocales = ["en", "es", "ar"]
+
+function getCurrentLocale(pathname: string): Locale {
+  const segments = pathname.split("/")
+  if (nonFrLocales.includes(segments[1])) return segments[1] as Locale
+  return "fr"
+}
+
+function getLocalePath(pathname: string, locale: Locale): string {
+  if (locale === "fr") {
+    return pathname.replace(/^\/(en|es|ar)/, "") || "/"
+  }
+  const stripped = pathname.replace(/^\/(en|es|ar)/, "") || "/"
+  return `/${locale}${stripped === "/" ? "" : stripped}`
+}
 
 export function LanguageSwitcher() {
   const pathname = usePathname()
-
-  function getLocalePath(locale: string): string {
-    const segments = pathname.split("/")
-    if (locales.includes(segments[1])) {
-      segments[1] = locale
-      return segments.join("/") || "/"
-    }
-    return `/${locale}${pathname}`
-  }
-
-  const currentLocale = locales.includes(pathname.split("/")[1])
-    ? pathname.split("/")[1]
-    : "fr"
+  const currentLocale = getCurrentLocale(pathname)
 
   return (
     <nav aria-label="Langue / Language" role="navigation">
@@ -37,7 +39,7 @@ export function LanguageSwitcher() {
         {languages.map((lang) => (
           <Link
             key={lang.code}
-            href={getLocalePath(lang.code)}
+            href={getLocalePath(pathname, lang.code)}
             lang={lang.code}
             hrefLang={lang.hreflang}
             aria-label={`Changer en ${lang.name}`}
