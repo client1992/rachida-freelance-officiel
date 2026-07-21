@@ -30,7 +30,18 @@ export const metadata: Metadata = {
     url: "https://rachidabigourn.fr",
     siteName: "Rachida Bigourn - Marketing Digital",
     locale: "fr_FR",
+    alternateLocale: ["en_US", "es_ES", "ar"],
     type: "website",
+  },
+  alternates: {
+    canonical: "https://rachidabigourn.fr",
+    languages: {
+      "fr": "https://rachidabigourn.fr",
+      "en": "https://rachidabigourn.fr",
+      "es": "https://rachidabigourn.fr",
+      "ar": "https://rachidabigourn.fr",
+      "x-default": "https://rachidabigourn.fr",
+    },
   },
 }
 
