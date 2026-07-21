@@ -1,12 +1,22 @@
 "use client"
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/use-translation"
 
+const locales = ["fr", "en", "es", "ar"]
+
+function getLocale(pathname: string): string {
+  const segments = pathname.split("/")
+  return locales.includes(segments[1]) ? segments[1] : "fr"
+}
+
 export function CtaFinal() {
   const { t } = useTranslation()
+  const pathname = usePathname()
+  const locale = getLocale(pathname)
 
   return (
     <section className="py-16 md:py-24 bg-foreground relative overflow-hidden">
@@ -25,7 +35,7 @@ export function CtaFinal() {
           asChild 
           className="bg-[#C9A227] hover:bg-[#C9A227]/90 text-foreground text-lg px-8 py-6 font-semibold"
         >
-          <Link href="/contact">
+          <Link href={`/${locale}/contact`}>
             {t("cta.button")}
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>

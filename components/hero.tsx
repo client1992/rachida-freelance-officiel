@@ -1,12 +1,27 @@
 "use client"
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/use-translation"
 
+const locales = ["fr", "en", "es", "ar"]
+
+function getLocale(pathname: string): string {
+  const segments = pathname.split("/")
+  return locales.includes(segments[1]) ? segments[1] : "fr"
+}
+
+function localePath(pathname: string, href: string): string {
+  const locale = getLocale(pathname)
+  if (href === "/") return `/${locale}`
+  return `/${locale}${href}`
+}
+
 export function Hero() {
   const { t, tArray } = useTranslation()
+  const pathname = usePathname()
   const highlights = tArray("hero.highlights") as string[]
 
   return (
@@ -21,25 +36,25 @@ export function Hero() {
           <p className="text-[#C9A227] font-medium mb-4 tracking-wide uppercase text-sm">
             {t("hero.badge")}
           </p>
-          
+
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-tight text-balance mb-6">
             {t("hero.title1")}{" "}
             <span className="text-primary">{t("hero.title2")}</span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 text-pretty">
             {t("hero.subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
             <Button size="lg" asChild className="text-base bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link href="/contact">
+              <Link href={localePath(pathname, "/contact")}>
                 {t("hero.cta")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="text-base border-[#C9A227]/50 text-foreground hover:bg-[#C9A227]/10 hover:border-[#C9A227]">
-              <Link href="/services">{t("hero.cta2")}</Link>
+              <Link href={localePath(pathname, "/services")}>{t("hero.cta2")}</Link>
             </Button>
           </div>
 

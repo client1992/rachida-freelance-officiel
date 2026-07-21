@@ -1,11 +1,26 @@
 "use client"
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import Image from "next/image"
 import { useTranslation } from "@/lib/use-translation"
 
+const locales = ["fr", "en", "es", "ar"]
+
+function getLocale(pathname: string): string {
+  const segments = pathname.split("/")
+  return locales.includes(segments[1]) ? segments[1] : "fr"
+}
+
+function localePath(pathname: string, href: string): string {
+  const locale = getLocale(pathname)
+  if (href === "/") return `/${locale}`
+  return `/${locale}${href}`
+}
+
 export function Footer() {
   const { t } = useTranslation()
+  const pathname = usePathname()
   const currentYear = new Date().getFullYear()
 
   const navLinks = [
@@ -21,7 +36,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <Link href="/" className="flex items-center gap-3 mb-4">
+            <Link href={localePath(pathname, "/")} className="flex items-center gap-3 mb-4">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-27%20at%2011.11.57-vtVczZnzPAmlKMNyyL3Ct8fRlLzsRW.jpeg"
                 alt="Rachida Bigourn Logo"
@@ -44,7 +59,7 @@ export function Footer() {
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={localePath(pathname, link.href)}
                   className="text-background/70 hover:text-[#C9A227] transition-colors"
                 >
                   {link.label}
@@ -57,8 +72,8 @@ export function Footer() {
             <h3 className="font-semibold mb-4 text-[#C9A227]">{t("footer.contactTitle")}</h3>
             <div className="space-y-2 text-background/70">
               <p>{t("footer.location")}</p>
-              <a 
-                href="mailto:Bigourn.rachida@gmail.com" 
+              <a
+                href="mailto:Bigourn.rachida@gmail.com"
                 className="hover:text-[#C9A227] transition-colors block"
               >
                 Bigourn.rachida@gmail.com
